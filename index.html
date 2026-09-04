@@ -1,187 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Krishi Bazaar | Direct Agri Marketplace Nepal</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishi Bazar - Online Agricultural Marketplace</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- Navigation Bar -->
-  <header class="navbar">
-    <div class="nav-container">
-      <div class="logo">
-        <span class="logo-icon">🌱</span>
-        <span class="logo-text">Krishi Bazaar</span>
-      </div>
-      <nav class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#kalimati">Kalimati Rates</a>
-        <a href="#products">Direct Marketplace</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <div class="nav-buttons">
-        <button class="btn btn-outline">Farmer Login</button>
-        <button class="btn btn-primary">Cart (0)</button>
-      </div>
-    </div>
-  </header>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                🌾 Krishi Bazar
+            </div>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <span class="badge">🇳🇵 Connecting Nepal's Farmers & Buyers</span>
-      <h1>Fresh Produce directly from Rural Farms to Urban Markets</h1>
-      <p>Eliminate middleman fees, check daily wholesale prices, and order fresh harvests directly from verified local cooperatives in Nepal.</p>
-      <div class="hero-actions">
-        <a href="#products" class="btn btn-primary btn-large">Browse Market</a>
-        <a href="#kalimati" class="btn btn-secondary btn-large">View Live Rates</a>
-      </div>
-    </div>
-  </section>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
 
-  <!-- Kalimati Price Rates Table -->
-  <section id="kalimati" class="section">
-    <div class="section-header">
-      <h2>Kalimati Today's Wholesale Rates</h2>
-      <p>Daily official vegetable and fruit rates from Kalimati Market, Kathmandu</p>
-    </div>
-    
-    <div class="table-container">
-      <table class="price-table">
-        <thead>
-          <tr>
-            <th>Commodity Name</th>
-            <th>Unit</th>
-            <th>Min Price</th>
-            <th>Avg Price</th>
-            <th>Max Price</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Tomato Big (Nepali)</td>
-            <td>KG</td>
-            <td>Rs 60</td>
-            <td><strong class="text-green">Rs 65</strong></td>
-            <td>Rs 70</td>
-          </tr>
-          <tr>
-            <td>Potato Red (Mude)</td>
-            <td>KG</td>
-            <td>Rs 48</td>
-            <td><strong class="text-green">Rs 50</strong></td>
-            <td>Rs 53</td>
-          </tr>
-          <tr>
-            <td>Onion Dry (Indian)</td>
-            <td>KG</td>
-            <td>Rs 93</td>
-            <td><strong class="text-green">Rs 95.83</strong></td>
-            <td>Rs 98</td>
-          </tr>
-          <tr>
-            <td>Cauliflower Local</td>
-            <td>KG</td>
-            <td>Rs 90</td>
-            <td><strong class="text-green">Rs 95</strong></td>
-            <td>Rs 100</td>
-          </tr>
-          <tr>
-            <td>Banana (Nepali)</td>
-            <td>Doz</td>
-            <td>Rs 250</td>
-            <td><strong class="text-green">Rs 275</strong></td>
-            <td>Rs 300</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
+            <button class="cart-btn">🛒 Cart</button>
+        </nav>
+    </header>
 
-  <!-- Product Marketplace Grid -->
-  <section id="products" class="section bg-light">
-    <div class="section-header">
-      <h2>Direct Farm Listings</h2>
-      <p>Group-buy fresh produce posted directly by farming cooperatives in Kavre, Dhading, and Chitwan.</p>
-    </div>
 
-    <div class="product-grid">
-      
-      <!-- Product Card 1 -->
-      <div class="product-card">
-        <div class="card-image bg-tomato">🍅</div>
-        <div class="card-body">
-          <span class="location-tag">📍 Kavre, Nepal</span>
-          <h3>Fresh Local Tomatoes</h3>
-          <p class="farmer-name">By Panchkhal Farmers Co-op</p>
-          <div class="price-row">
-            <span class="price">Rs 35 <small>/ KG</small></span>
-            <span class="stock">Available: 500 KG</span>
-          </div>
-          <button class="btn btn-primary btn-block">Join Group Order</button>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Fresh Products From Local Farmers</h1>
+
+            <p>
+                Buy fresh and organic agricultural products directly
+                from farmers at Krishi Bazar.
+            </p>
+
+            <a href="#products" class="shop-btn">Shop Now</a>
         </div>
-      </div>
+    </section>
 
-      <!-- Product Card 2 -->
-      <div class="product-card">
-        <div class="card-image bg-potato">🥔</div>
-        <div class="card-body">
-          <span class="location-tag">📍 Mude, Sindhupalchok</span>
-          <h3>Organic Red Potatoes</h3>
-          <p class="farmer-name">By Mude Potato Growers</p>
-          <div class="price-row">
-            <span class="price">Rs 40 <small>/ KG</small></span>
-            <span class="stock">Available: 1,200 KG</span>
-          </div>
-          <button class="btn btn-primary btn-block">Join Group Order</button>
+
+    <!-- Categories -->
+    <section class="section" id="categories">
+
+        <h2>Product Categories</h2>
+
+        <div class="categories">
+
+            <div class="category">
+                <div class="category-icon">🥦</div>
+                <h3>Vegetables</h3>
+                <p>Fresh vegetables from local farms.</p>
+            </div>
+
+            <div class="category">
+                <div class="category-icon">🍎</div>
+                <h3>Fruits</h3>
+                <p>Fresh and healthy seasonal fruits.</p>
+            </div>
+
+            <div class="category">
+                <div class="category-icon">🌾</div>
+                <h3>Grains</h3>
+                <p>Quality rice, wheat and other grains.</p>
+            </div>
+
+            <div class="category">
+                <div class="category-icon">🥛</div>
+                <h3>Dairy</h3>
+                <p>Fresh milk and dairy products.</p>
+            </div>
+
         </div>
-      </div>
 
-      <!-- Product Card 3 -->
-      <div class="product-card">
-        <div class="card-image bg-cabbage">🥬</div>
-        <div class="card-body">
-          <span class="location-tag">📍 Dhading</span>
-          <h3>Fresh Green Cabbage</h3>
-          <p class="farmer-name">By Trishuli Farm Collective</p>
-          <div class="price-row">
-            <span class="price">Rs 20 <small>/ KG</small></span>
-            <span class="stock">Available: 800 KG</span>
-          </div>
-          <button class="btn btn-primary btn-block">Join Group Order</button>
+    </section>
+
+
+    <!-- Products -->
+    <section class="section products-section" id="products">
+
+        <h2>Featured Products</h2>
+
+        <div class="products">
+
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image">🍅</div>
+
+                <div class="product-info">
+                    <h3>Fresh Tomato</h3>
+                    <p class="farmer">👨‍🌾 Local Farmer</p>
+                    <p class="price">Rs. 80 / kg</p>
+
+                    <button class="buy-btn">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image">🥔</div>
+
+                <div class="product-info">
+                    <h3>Fresh Potato</h3>
+                    <p class="farmer">👨‍🌾 Local Farmer</p>
+                    <p class="price">Rs. 70 / kg</p>
+
+                    <button class="buy-btn">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image">🍎</div>
+
+                <div class="product-info">
+                    <h3>Fresh Apple</h3>
+                    <p class="farmer">👨‍🌾 Local Farmer</p>
+                    <p class="price">Rs. 250 / kg</p>
+
+                    <button class="buy-btn">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-image">🌾</div>
+
+                <div class="product-info">
+                    <h3>Rice</h3>
+                    <p class="farmer">👨‍🌾 Local Farmer</p>
+                    <p class="price">Rs. 120 / kg</p>
+
+                    <button class="buy-btn">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
         </div>
-      </div>
 
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer Section -->
-  <footer id="contact" class="footer">
-    <div class="footer-container">
-      <div>
-        <h3>Krishi Bazaar 🌱</h3>
-        <p>Connecting Nepal's rural producers with urban markets using modern digital tools.</p>
-      </div>
-      <div>
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#kalimati">Kalimati Rates</a></li>
-          <li><a href="#products">Direct Market</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Contact Us</h4>
-        <p>Email: support@krishibazaar.np</p>
-        <p>Kathmandu, Nepal</p>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 Krishi Bazaar Nepal. All Rights Reserved.</p>
-    </div>
-  </footer>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+
+        <div class="about-content">
+
+            <h2>About Krishi Bazar</h2>
+
+            <p>
+                Krishi Bazar is an online agricultural marketplace that
+                connects farmers directly with customers. Our goal is to
+                help farmers sell their products at fair prices while
+                providing customers with fresh and quality agricultural
+                products.
+            </p>
+
+            <div class="features">
+
+                <div>
+                    <strong>🌱</strong>
+                    <p>Fresh Products</p>
+                </div>
+
+                <div>
+                    <strong>👨‍🌾</strong>
+                    <p>Support Farmers</p>
+                </div>
+
+                <div>
+                    <strong>🚚</strong>
+                    <p>Easy Delivery</p>
+                </div>
+
+                <div>
+                    <strong>💰</strong>
+                    <p>Fair Prices</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>Have questions? Contact Krishi Bazar.</p>
+
+        <form>
+
+            <input type="text" placeholder="Your Name" required>
+
+            <input type="email" placeholder="Your Email" required>
+
+            <textarea placeholder="Your Message" rows="5"></textarea>
+
+            <button type="submit" class="submit-btn">
+                Send Message
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-content">
+
+            <h3>🌾 Krishi Bazar</h3>
+
+            <p>
+                Connecting Farmers and Customers Online
+            </p>
+
+            <p>
+                © 2026 Krishi Bazar. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
 
 </body>
 </html>
