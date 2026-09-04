@@ -2,40 +2,186 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Krishi Bazaar Analytics</title>
-  
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  
-  <!-- External Custom Stylesheet -->
-  <link rel="stylesheet" href="styles.css" />
-
-  <!-- External JavaScript Libraries -->
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krishi Bazaar | Direct Agri Marketplace Nepal</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body class="bg-gray-50 p-4">
+<body>
 
-  <div class="max-w-md mx-auto bg-white rounded-xl shadow-md p-4 mb-4 border border-gray-100">
-    <!-- Header Block -->
-    <div class="flex justify-between items-center mb-3">
-      <div>
-        <h2 id="crop-title" class="text-lg font-bold text-gray-800">Kalimati Wholesale Rates</h2>
-        <p class="text-xs text-gray-500">Live Trend Index (NPR/KG)</p>
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <span class="logo-icon">🌱</span>
+        <span class="logo-text">Krishi Bazaar</span>
       </div>
-      <span id="price-badge" class="px-2.5 py-1 rounded-full text-xs font-semibold bg-green-100 text-green-800">
-        Syncing...
-      </span>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#kalimati">Kalimati Rates</a>
+        <a href="#products">Direct Marketplace</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-buttons">
+        <button class="btn btn-outline">Farmer Login</button>
+        <button class="btn btn-primary">Cart (0)</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <span class="badge">🇳🇵 Connecting Nepal's Farmers & Buyers</span>
+      <h1>Fresh Produce directly from Rural Farms to Urban Markets</h1>
+      <p>Eliminate middleman fees, check daily wholesale prices, and order fresh harvests directly from verified local cooperatives in Nepal.</p>
+      <div class="hero-actions">
+        <a href="#products" class="btn btn-primary btn-large">Browse Market</a>
+        <a href="#kalimati" class="btn btn-secondary btn-large">View Live Rates</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kalimati Price Rates Table -->
+  <section id="kalimati" class="section">
+    <div class="section-header">
+      <h2>Kalimati Today's Wholesale Rates</h2>
+      <p>Daily official vegetable and fruit rates from Kalimati Market, Kathmandu</p>
+    </div>
+    
+    <div class="table-container">
+      <table class="price-table">
+        <thead>
+          <tr>
+            <th>Commodity Name</th>
+            <th>Unit</th>
+            <th>Min Price</th>
+            <th>Avg Price</th>
+            <th>Max Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tomato Big (Nepali)</td>
+            <td>KG</td>
+            <td>Rs 60</td>
+            <td><strong class="text-green">Rs 65</strong></td>
+            <td>Rs 70</td>
+          </tr>
+          <tr>
+            <td>Potato Red (Mude)</td>
+            <td>KG</td>
+            <td>Rs 48</td>
+            <td><strong class="text-green">Rs 50</strong></td>
+            <td>Rs 53</td>
+          </tr>
+          <tr>
+            <td>Onion Dry (Indian)</td>
+            <td>KG</td>
+            <td>Rs 93</td>
+            <td><strong class="text-green">Rs 95.83</strong></td>
+            <td>Rs 98</td>
+          </tr>
+          <tr>
+            <td>Cauliflower Local</td>
+            <td>KG</td>
+            <td>Rs 90</td>
+            <td><strong class="text-green">Rs 95</strong></td>
+            <td>Rs 100</td>
+          </tr>
+          <tr>
+            <td>Banana (Nepali)</td>
+            <td>Doz</td>
+            <td>Rs 250</td>
+            <td><strong class="text-green">Rs 275</strong></td>
+            <td>Rs 300</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Product Marketplace Grid -->
+  <section id="products" class="section bg-light">
+    <div class="section-header">
+      <h2>Direct Farm Listings</h2>
+      <p>Group-buy fresh produce posted directly by farming cooperatives in Kavre, Dhading, and Chitwan.</p>
     </div>
 
-    <!-- Interactive Canvas Area -->
-    <div class="relative h-64 w-full">
-      <canvas id="priceChart"></canvas>
-    </div>
-  </div>
+    <div class="product-grid">
+      
+      <!-- Product Card 1 -->
+      <div class="product-card">
+        <div class="card-image bg-tomato">🍅</div>
+        <div class="card-body">
+          <span class="location-tag">📍 Kavre, Nepal</span>
+          <h3>Fresh Local Tomatoes</h3>
+          <p class="farmer-name">By Panchkhal Farmers Co-op</p>
+          <div class="price-row">
+            <span class="price">Rs 35 <small>/ KG</small></span>
+            <span class="stock">Available: 500 KG</span>
+          </div>
+          <button class="btn btn-primary btn-block">Join Group Order</button>
+        </div>
+      </div>
 
-  <!-- Custom External JavaScript Script -->
-  <script src="chart.js"></script>
+      <!-- Product Card 2 -->
+      <div class="product-card">
+        <div class="card-image bg-potato">🥔</div>
+        <div class="card-body">
+          <span class="location-tag">📍 Mude, Sindhupalchok</span>
+          <h3>Organic Red Potatoes</h3>
+          <p class="farmer-name">By Mude Potato Growers</p>
+          <div class="price-row">
+            <span class="price">Rs 40 <small>/ KG</small></span>
+            <span class="stock">Available: 1,200 KG</span>
+          </div>
+          <button class="btn btn-primary btn-block">Join Group Order</button>
+        </div>
+      </div>
+
+      <!-- Product Card 3 -->
+      <div class="product-card">
+        <div class="card-image bg-cabbage">🥬</div>
+        <div class="card-body">
+          <span class="location-tag">📍 Dhading</span>
+          <h3>Fresh Green Cabbage</h3>
+          <p class="farmer-name">By Trishuli Farm Collective</p>
+          <div class="price-row">
+            <span class="price">Rs 20 <small>/ KG</small></span>
+            <span class="stock">Available: 800 KG</span>
+          </div>
+          <button class="btn btn-primary btn-block">Join Group Order</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer id="contact" class="footer">
+    <div class="footer-container">
+      <div>
+        <h3>Krishi Bazaar 🌱</h3>
+        <p>Connecting Nepal's rural producers with urban markets using modern digital tools.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#kalimati">Kalimati Rates</a></li>
+          <li><a href="#products">Direct Market</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact Us</h4>
+        <p>Email: support@krishibazaar.np</p>
+        <p>Kathmandu, Nepal</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Krishi Bazaar Nepal. All Rights Reserved.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
