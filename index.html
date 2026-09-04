@@ -1,3 +1,41 @@
-<html>
-    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Krishi Bazaar Analytics</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- External Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- External JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-gray-50 p-4">
+
+  <div class="max-w-md mx-auto bg-white rounded-xl shadow-md p-4 mb-4 border border-gray-100">
+    <!-- Header Block -->
+    <div class="flex justify-between items-center mb-3">
+      <div>
+        <h2 id="crop-title" class="text-lg font-bold text-gray-800">Kalimati Wholesale Rates</h2>
+        <p class="text-xs text-gray-500">Live Trend Index (NPR/KG)</p>
+      </div>
+      <span id="price-badge" class="px-2.5 py-1 rounded-full text-xs font-semibold bg-green-100 text-green-800">
+        Syncing...
+      </span>
+    </div>
+
+    <!-- Interactive Canvas Area -->
+    <div class="relative h-64 w-full">
+      <canvas id="priceChart"></canvas>
+    </div>
+  </div>
+
+  <!-- Custom External JavaScript Script -->
+  <script src="chart.js"></script>
+</body>
 </html>
