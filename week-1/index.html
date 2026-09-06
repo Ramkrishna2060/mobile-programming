@@ -1,0 +1,1419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Krishi-Bazaar | Direct Farm Marketplace</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="container nav">
+
+        <a href="#" class="logo">
+            <span>KB</span>
+            Krishi-Bazaar
+        </a>
+
+        <button class="menu-btn" id="menuBtn">
+            ☰
+        </button>
+
+        <nav id="mainNav">
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#prices">Prices</a>
+            <a href="#how">How It Works</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="btn btn-light" id="loginBtn">
+                Login
+            </button>
+
+            <button class="btn btn-primary" id="sellBtn">
+                Sell Product
+            </button>
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- ================= MAIN ================= -->
+
+<main>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="container hero-grid">
+
+        <div class="hero-text">
+
+            <div class="badge">
+                🇳🇵 Nepal's Direct Farm Marketplace
+            </div>
+
+            <h1>
+                Sell Direct.<br>
+                <span>Buy Smart.</span>
+            </h1>
+
+            <p>
+                Connect farmers directly with buyers and discover fair,
+                transparent agricultural prices without unnecessary middlemen.
+            </p>
+
+
+            <!-- Search -->
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search vegetables, fruits, grains..."
+                >
+
+                <button id="searchBtn">
+                    Search
+                </button>
+
+            </div>
+
+
+            <!-- Hero Buttons -->
+
+            <div class="hero-buttons">
+
+                <a href="#products"
+                   class="btn btn-primary">
+                    Browse Products
+                </a>
+
+                <button
+                    class="btn btn-outline"
+                    id="heroSellBtn">
+                    Start Selling
+                </button>
+
+            </div>
+
+
+            <!-- Statistics -->
+
+            <div class="stats">
+
+                <div>
+                    <strong>500+</strong>
+                    <small>Farmers</small>
+                </div>
+
+                <div>
+                    <strong>1,200+</strong>
+                    <small>Products</small>
+                </div>
+
+                <div>
+                    <strong>25+</strong>
+                    <small>Markets</small>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Market Card -->
+
+        <div class="hero-card">
+
+            <div class="market-top">
+
+                <div>
+                    <small>Today's Market</small>
+                    <h3>Fresh prices</h3>
+                </div>
+
+                <span class="live">
+                    ● LIVE
+                </span>
+
+            </div>
+
+
+            <div class="mini-price">
+                <span>🍅 Tomato</span>
+                <strong>
+                    Rs. 80/kg
+                    <em>↑ 8%</em>
+                </strong>
+            </div>
+
+            <div class="mini-price">
+                <span>🥔 Potato</span>
+                <strong>
+                    Rs. 55/kg
+                    <em>↑ 4%</em>
+                </strong>
+            </div>
+
+            <div class="mini-price">
+                <span>🥦 Cauliflower</span>
+                <strong>
+                    Rs. 70/kg
+                    <em>↓ 3%</em>
+                </strong>
+            </div>
+
+            <div class="mini-price">
+                <span>🌾 Rice</span>
+                <strong>
+                    Rs. 95/kg
+                    <em>↑ 2%</em>
+                </strong>
+            </div>
+
+            <a href="#prices" class="view-prices">
+                View all market prices →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= MARKET PRICES ================= -->
+
+<section class="section prices" id="prices">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="eyebrow">
+                    MARKET TRACKER
+                </span>
+
+                <h2>
+                    Today's Market Prices
+                </h2>
+
+                <p>
+                    Simple and transparent prices to help farmers
+                    and buyers make better decisions.
+                </p>
+
+            </div>
+
+
+            <select id="marketSelect">
+
+                <option>Kathmandu</option>
+                <option>Chitwan</option>
+                <option>Pokhara</option>
+                <option>Biratnagar</option>
+
+            </select>
+
+        </div>
+
+
+        <div class="price-grid">
+
+            <div class="price-card">
+
+                <div class="product-icon">
+                    🍅
+                </div>
+
+                <h3>Tomato</h3>
+
+                <strong>
+                    Rs. 80/kg
+                </strong>
+
+                <span class="up">
+                    ▲ 8% this week
+                </span>
+
+            </div>
+
+
+            <div class="price-card">
+
+                <div class="product-icon">
+                    🥔
+                </div>
+
+                <h3>Potato</h3>
+
+                <strong>
+                    Rs. 55/kg
+                </strong>
+
+                <span class="up">
+                    ▲ 4% this week
+                </span>
+
+            </div>
+
+
+            <div class="price-card">
+
+                <div class="product-icon">
+                    🥦
+                </div>
+
+                <h3>Cauliflower</h3>
+
+                <strong>
+                    Rs. 70/kg
+                </strong>
+
+                <span class="down">
+                    ▼ 3% this week
+                </span>
+
+            </div>
+
+
+            <div class="price-card">
+
+                <div class="product-icon">
+                    🌾
+                </div>
+
+                <h3>Rice</h3>
+
+                <strong>
+                    Rs. 95/kg
+                </strong>
+
+                <span class="up">
+                    ▲ 2% this week
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= PRODUCTS ================= -->
+
+<section class="section products" id="products">
+
+    <div class="container">
+
+        <div class="section-heading center">
+
+            <span class="eyebrow">
+                FRESH FROM FARM
+            </span>
+
+            <h2>
+                Popular Products
+            </h2>
+
+            <p>
+                Find agricultural products directly from local farmers.
+            </p>
+
+        </div>
+
+
+        <!-- Filters -->
+
+        <div class="filter-row">
+
+            <button
+                class="filter active"
+                data-category="all">
+                All
+            </button>
+
+            <button
+                class="filter"
+                data-category="vegetable">
+                Vegetables
+            </button>
+
+            <button
+                class="filter"
+                data-category="fruit">
+                Fruits
+            </button>
+
+            <button
+                class="filter"
+                data-category="grain">
+                Grains
+            </button>
+
+        </div>
+
+
+        <!-- Product Grid -->
+<div class="product-grid" id="productGrid">
+
+    <!-- ================= VEGETABLES ================= -->
+
+    <!-- Tomato -->
+    <article class="product-card"
+        data-name="Tomato"
+        data-category="vegetable">
+
+        <div class="product-image tomato-bg">🍅</div>
+
+        <div class="product-info">
+            <span class="category">Vegetable</span>
+            <h3>Fresh Tomato</h3>
+            <p>From Chitwan farmer</p>
+
+            <div class="product-bottom">
+                <strong>Rs. 80/kg</strong>
+                <button class="buy-btn">View</button>
+            </div>
+        </div>
+    </article>
+
+
+    <!-- Potato -->
+    <article class="product-card"
+        data-name="Potato"
+        data-category="vegetable">
+
+        <div class="product-image potato-bg">🥔</div>
+
+        <div class="product-info">
+            <span class="category">Vegetable</span>
+            <h3>Local Potato</h3>
+            <p>From Kavre farmer</p>
+
+            <div class="product-bottom">
+                <strong>Rs. 55/kg</strong>
+                <button class="buy-btn">View</button>
+            </div>
+        </div>
+    </article>
+
+
+    <!-- Cauliflower -->
+    <article class="product-card"
+        data-name="Cauliflower"
+        data-category="vegetable">
+
+        <div class="product-image cauliflower-bg">🥦</div>
+
+        <div class="product-info">
+            <span class="category">Vegetable</span>
+            <h3>Cauliflower</h3>
+            <p>From Kathmandu farmer</p>
+
+            <div class="product-bottom">
+                <strong>Rs. 70/kg</strong>
+                <button class="buy-btn">View</button>
+            </div>
+        </div>
+    </article>
+
+
+    <!-- Cabbage -->
+    <article class="product-card"
+        data-name="Cabbage"
+        data-category="vegetable">
+
+        <div class="product-image cabbage-bg">🥬</div>
+
+        <div class="product-info">
+            <span class="category">Vegetable</span>
+            <h3>Fresh Cabbage</h3>
+            <p>From Dhading farmer</p>
+
+            <div class="product-bottom">
+                <strong>Rs. 45/kg</strong>
+                <button class="buy-btn">View</button>
+            </div>
+        </div>
+    </article>
+
+
+    <!-- Carrot -->
+    <article class="product-card"
+        data-name="Carrot"
+        data-category="vegetable">
+
+        <div class="product-image carrot-bg">🥕</div>
+
+        <div class="product-info">
+            <span class="category">Vegetable</span>
+            <h3>Fresh Carrot</h3>
+            <p>From Kavre farmer</p>
+
+            <div class="product-bottom">
+                <strong>Rs. 65/kg</strong>
+                <button class="buy-btn">View</button>
+            </div>
+        </div>
+    </article>
+
+
+    <!-- Radish -->
+    <article class="product-card"
+        data-name="Radish"
+        data-category="vegetable">
+
+        <div class="product-image radish-bg">🌱</div>
+
+        <div class="product-info">
+            <span class="category">Vegetable</span>
+            <h3>Fresh Radish</h3>
+            <p>From Bhaktapur farmer</p>
+
+            <div class="product-bottom">
+                <strong>Rs. 40/kg</strong>
+                <button class="buy-btn">View</button>
+            </div>
+        </div>
+    </article>
+
+
+    <!-- Spinach -->
+    <article class="product-card"
+        data-name="Spinach"
+        data-category="vegetable">
+
+        <div class="product-image spinach-bg">🌿</div>
+
+        <div class="product-info">
+            <span class="category">Vegetable</span>
+            <h3>Fresh Spinach</h3>
+            <p>From Lalitpur farmer</p>
+
+            <div class="product-bottom">
+                <strong>Rs. 50/kg</strong>
+                <button class="buy-btn">View</button>
+            </div>
+        </div>
+    </article>
+
+
+    <!-- Brinjal -->
+    <article class="product-card"
+        data-name="Brinjal"
+        data-category="vegetable">
+
+        <div class="product-image brinjal-bg">🍆</div>
+
+        <div class="product-info">
+            <span class="category">Vegetable</span>
+            <h3>Fresh Brinjal</h3>
+            <p>From Chitwan farmer</p>
+
+            <div class="product-bottom">
+                <strong>Rs. 75/kg</strong>
+                <button class="buy-btn">View</button>
+            </div>
+        </div>
+    </article>
+
+
+    <!-- Cucumber -->
+    <article class="product-card"
+        data-name="Cucumber"
+        data-category="vegetable">
+
+        <div class="product-image cucumber-bg">🥒</div>
+
+        <div class="product-info">
+            <span class="category">Vegetable</span>
+            <h3>Fresh Cucumber</h3>
+            <p>From Kavre farmer</p>
+
+            <div class="product-bottom">
+                <strong>Rs. 60/kg</strong>
+                <button class="buy-btn">View</button>
+            </div>
+        </div>
+    </article>
+
+
+    <!-- Pumpkin -->
+    <article class="product-card"
+        data-name="Pumpkin"
+        data-category="vegetable">
+
+        <div class="product-image pumpkin-bg">🎃</div>
+
+        <div class="product-info">
+            <span class="category">Vegetable</span>
+            <h3>Local Pumpkin</h3>
+            <p>From Nuwakot farmer</p>
+
+            <div class="product-bottom">
+                <strong>Rs. 50/kg</strong>
+                <button class="buy-btn">View</button>
+            </div>
+        </div>
+    </article>
+
+
+    <!-- Green Beans -->
+    <article class="product-card"
+        data-name="Green Beans"
+        data-category="vegetable">
+
+        <div class="product-image beans-bg">🫛</div>
+
+        <div class="product-info">
+            <span class="category">Vegetable</span>
+            <h3>Green Beans</h3>
+            <p>From Kavre farmer</p>
+
+            <div class="product-bottom">
+                <strong>Rs. 90/kg</strong>
+                <button class="buy-btn">View</button>
+            </div>
+        </div>
+    </article>
+
+
+    <!-- Bitter Gourd -->
+    <article class="product-card"
+        data-name="Bitter Gourd"
+        data-category="vegetable">
+
+        <div class="product-image bitter-bg">🥒</div>
+
+        <div class="product-info">
+            <span class="category">Vegetable</span>
+            <h3>Bitter Gourd</h3>
+            <p>From Chitwan farmer</p>
+
+            <div class="product-bottom">
+                <strong>Rs. 85/kg</strong>
+                <button class="buy-btn">View</button>
+            </div>
+        </div>
+    </article>
+
+
+
+    <!-- ================= FRUITS ================= -->
+
+    <!-- Apple -->
+    <article class="product-card"
+        data-name="Apple"
+        data-category="fruit">
+
+        <div class="product-image apple-bg">🍎</div>
+
+        <div class="product-info">
+            <span class="category">Fruit</span>
+            <h3>Organic Apple</h3>
+            <p>From Mustang farmer</p>
+
+            <div class="product-bottom">
+                <strong>Rs. 220/kg</strong>
+                <button class="buy-btn">View</button>
+            </div>
+        </div>
+    </article>
+
+
+    <!-- Banana -->
+    <article class="product-card"
+        data-name="Banana"
+        data-category="fruit">
+
+        <div class="product-image banana-bg">🍌</div>
+
+        <div class="product-info">
+            <span class="category">Fruit</span>
+            <h3>Fresh Banana</h3>
+            <p>From Chitwan farmer</p>
+
+            <div class="product-bottom">
+                <strong>Rs. 120/dozen</strong>
+                <button class="buy-btn">View</button>
+            </div>
+        </div>
+    </article>
+
+
+    <!-- Orange -->
+    <article class="product-card"
+        data-name="Orange"
+        data-category="fruit">
+
+        <div class="product-image orange-bg">🍊</div>
+
+        <div class="product-info">
+            <span class="category">Fruit</span>
+            <h3>Fresh Orange</h3>
+            <p>From Sindhuli farmer</p>
+
+            <div class="product-bottom">
+                <strong>Rs. 150/kg</strong>
+                <button class="buy-btn">View</button>
+            </div>
+        </div>
+    </article>
+
+
+    <!-- Mango -->
+    <article class="product-card"
+        data-name="Mango"
+        data-category="fruit">
+
+        <div class="product-image mango-bg">🥭</div>
+
+        <div class="product-info">
+            <span class="category">Fruit</span>
+            <h3>Fresh Mango</h3>
+            <p>From Terai farmer</p>
+
+            <div class="product-bottom">
+                <strong>Rs. 160/kg</strong>
+                <button class="buy-btn">View</button>
+            </div>
+        </div>
+    </article>
+
+
+    <!-- Papaya -->
+    <article class="product-card"
+        data-name="Papaya"
+        data-category="fruit">
+
+        <div class="product-image papaya-bg">🥭</div>
+
+        <div class="product-info">
+            <span class="category">Fruit</span>
+            <h3>Fresh Papaya</h3>
+            <p>From Chitwan farmer</p>
+
+            <div class="product-bottom">
+                <strong>Rs. 90/kg</strong>
+                <button class="buy-btn">View</button>
+            </div>
+        </div>
+    </article>
+
+
+    <!-- Watermelon -->
+    <article class="product-card"
+        data-name="Watermelon"
+        data-category="fruit">
+
+        <div class="product-image watermelon-bg">🍉</div>
+
+        <div class="product-info">
+            <span class="category">Fruit</span>
+            <h3>Watermelon</h3>
+            <p>From Nawalpur farmer</p>
+
+            <div class="product-bottom">
+                <strong>Rs. 70/kg</strong>
+                <button class="buy-btn">View</button>
+            </div>
+        </div>
+    </article>
+
+
+    <!-- Grapes -->
+    <article class="product-card"
+        data-name="Grapes"
+        data-category="fruit">
+
+        <div class="product-image grapes-bg">🍇</div>
+
+        <div class="product-info">
+            <span class="category">Fruit</span>
+            <h3>Fresh Grapes</h3>
+            <p>Local farm</p>
+
+            <div class="product-bottom">
+                <strong>Rs. 180/kg</strong>
+                <button class="buy-btn">View</button>
+            </div>
+        </div>
+    </article>
+
+
+    <!-- Pomegranate -->
+    <article class="product-card"
+        data-name="Pomegranate"
+        data-category="fruit">
+
+        <div class="product-image pomegranate-bg">🍎</div>
+
+        <div class="product-info">
+            <span class="category">Fruit</span>
+            <h3>Pomegranate</h3>
+            <p>From Dadeldhura farmer</p>
+
+            <div class="product-bottom">
+                <strong>Rs. 250/kg</strong>
+                <button class="buy-btn">View</button>
+            </div>
+        </div>
+    </article>
+
+
+    <!-- Guava -->
+    <article class="product-card"
+        data-name="Guava"
+        data-category="fruit">
+
+        <div class="product-image guava-bg">🍐</div>
+
+        <div class="product-info">
+            <span class="category">Fruit</span>
+            <h3>Fresh Guava</h3>
+            <p>From Chitwan farmer</p>
+
+            <div class="product-bottom">
+                <strong>Rs. 110/kg</strong>
+                <button class="buy-btn">View</button>
+            </div>
+        </div>
+    </article>
+
+
+    <!-- Litchi -->
+    <article class="product-card"
+        data-name="Litchi"
+        data-category="fruit">
+
+        <div class="product-image litchi-bg">🍒</div>
+
+        <div class="product-info">
+            <span class="category">Fruit</span>
+            <h3>Fresh Litchi</h3>
+            <p>From Terai farmer</p>
+
+            <div class="product-bottom">
+                <strong>Rs. 200/kg</strong>
+                <button class="buy-btn">View</button>
+            </div>
+        </div>
+    </article>
+
+
+    <!-- Kiwi -->
+    <article class="product-card"
+        data-name="Kiwi"
+        data-category="fruit">
+
+        <div class="product-image kiwi-bg">🥝</div>
+
+        <div class="product-info">
+            <span class="category">Fruit</span>
+            <h3>Local Kiwi</h3>
+            <p>From Dolakha farmer</p>
+
+            <div class="product-bottom">
+                <strong>Rs. 350/kg</strong>
+                <button class="buy-btn">View</button>
+            </div>
+        </div>
+    </article>
+
+
+    <!-- Pineapple -->
+    <article class="product-card"
+        data-name="Pineapple"
+        data-category="fruit">
+
+        <div class="product-image pineapple-bg">🍍</div>
+
+        <div class="product-info">
+            <span class="category">Fruit</span>
+            <h3>Fresh Pineapple</h3>
+            <p>From Jhapa farmer</p>
+
+            <div class="product-bottom">
+                <strong>Rs. 130/kg</strong>
+                <button class="buy-btn">View</button>
+            </div>
+        </div>
+    </article>
+
+
+            <!-- Rice -->
+
+
+    <div class="product-card"
+        data-name="Rice"
+        data-category="grain">
+        <div class="product-image rice-bg">
+            🌾
+        </div>
+        <div class="product-info">
+            <span class="product-category">Grains</span>
+            <h3>Rice</h3>
+            <p class="location">📍 Jhapa, Nepal</p>
+            <div class="product-bottom">
+                <strong>Rs. 95/kg</strong>
+                <button class="buy-btn">View</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card"
+        data-name="Wheat"
+        data-category="grain">
+        <div class="product-image wheat-bg">
+            🌾
+        </div>
+        <div class="product-info">
+            <span class="product-category">Grains</span>
+            <h3>Wheat</h3>
+            <p class="location">📍 Rupandehi, Nepal</p>
+            <div class="product-bottom">
+                <strong>Rs. 70/kg</strong>
+                <button class="buy-btn">View</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card"
+        data-name="Maize"
+        data-category="grain">
+        <div class="product-image maize-bg">
+            🌽
+        </div>
+        <div class="product-info">
+            <span class="product-category">Grains</span>
+            <h3>Maize</h3>
+            <p class="location">📍 Chitwan, Nepal</p>
+            <div class="product-bottom">
+                <strong>Rs. 65/kg</strong>
+                <button class="buy-btn">View</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card"
+        data-name="Millet"
+        data-category="grain">
+        <div class="product-image millet-bg">
+            🌾
+        </div>
+        <div class="product-info">
+            <span class="product-category">Grains</span>
+            <h3>Millet</h3>
+            <p class="location">📍 Kavre, Nepal</p>
+            <div class="product-bottom">
+                <strong>Rs. 120/kg</strong>
+                <button class="buy-btn">View</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card"
+        data-name="Buckwheat"
+        data-category="grain">
+        <div class="product-image buckwheat-bg">
+            🌾
+        </div>
+        <div class="product-info">
+            <span class="product-category">Grains</span>
+            <h3>Buckwheat</h3>
+            <p class="location">📍 Mustang, Nepal</p>
+            <div class="product-bottom">
+                <strong>Rs. 180/kg</strong>
+                <button class="buy-btn">View</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card"
+        data-name="Barley"
+        data-category="grain">
+        <div class="product-image barley-bg">
+            🌾
+        </div>
+        <div class="product-info">
+            <span class="product-category">Grains</span>
+            <h3>Barley</h3>
+            <p class="location">📍 Dolakha, Nepal</p>
+            <div class="product-bottom">
+                <strong>Rs. 110/kg</strong>
+                <button class="buy-btn">View</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card"
+        data-name="Lentils"
+        data-category="grain">
+        <div class="product-image lentils-bg">
+            🫘
+        </div>
+        <div class="product-info">
+            <span class="product-category">Pulses</span>
+            <h3>Lentils</h3>
+            <p class="location">📍 Banke, Nepal</p>
+            <div class="product-bottom">
+                <strong>Rs. 150/kg</strong>
+                <button class="buy-btn">View</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card"
+        data-name="Black Gram"
+        data-category="grain">
+        <div class="product-image blackgram-bg">
+            🫘
+        </div>
+        <div class="product-info">
+            <span class="product-category">Pulses</span>
+            <h3>Black Gram</h3>
+            <p class="location">📍 Dang, Nepal</p>
+            <div class="product-bottom">
+                <strong>Rs. 170/kg</strong>
+                <button class="buy-btn">View</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card"
+        data-name="Soybean"
+        data-category="grain">
+        <div class="product-image soybean-bg">
+            🫘
+        </div>
+        <div class="product-info">
+            <span class="product-category">Pulses</span>
+            <h3>Soybean</h3>
+            <p class="location">📍 Jhapa, Nepal</p>
+            <div class="product-bottom">
+                <strong>Rs. 140/kg</strong>
+                <button class="buy-btn">View</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card"
+        data-name="Chickpeas"
+        data-category="grain">
+        <div class="product-image chickpeas-bg">
+            🫘
+        </div>
+        <div class="product-info">
+            <span class="product-category">Pulses</span>
+            <h3>Chickpeas</h3>
+            <p class="location">📍 Parsa, Nepal</p>
+            <div class="product-bottom">
+                <strong>Rs. 160/kg</strong>
+                <button class="buy-btn">View</button>
+            </div>
+        </div>
+    </div>
+
+                <div class="product-info">
+
+                    <span class="category">
+                        Grain
+                    </span>
+
+                    <h3>
+                        Local Rice
+                    </h3>
+
+                    <p>
+                        From Jhapa farmer
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            Rs. 95/kg
+                        </strong>
+
+                        <button class="buy-btn">
+                            View
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <div id="noResults" class="no-results">
+            No products found.
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= PRICE CHART ================= -->
+
+<section class="section chart-section">
+
+    <div class="container chart-layout">
+
+        <div>
+
+            <span class="eyebrow">
+                PRICE INSIGHTS
+            </span>
+
+            <h2>
+                Tomato Price Trend
+            </h2>
+
+            <p>
+                Track recent price movement and use market information
+                to decide when and where to sell.
+            </p>
+
+
+            <div class="insight">
+
+                <strong>
+                    Rs. 80/kg
+                </strong>
+
+                <span>
+                    Current sample market price
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="chart-card">
+
+            <canvas id="priceChart"></canvas>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= HOW IT WORKS ================= -->
+
+<section class="section how" id="how">
+
+    <div class="container">
+
+        <div class="section-heading center">
+
+            <span class="eyebrow">
+                SIMPLE PROCESS
+            </span>
+
+            <h2>
+                How Krishi-Bazaar Works
+            </h2>
+
+        </div>
+
+
+        <div class="steps">
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    01
+                </div>
+
+                <div>
+
+                    <h3>
+                        Farmer Registers
+                    </h3>
+
+                    <p>
+                        Create a simple seller profile and add
+                        your farm information.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    02
+                </div>
+
+                <div>
+
+                    <h3>
+                        List Your Product
+                    </h3>
+
+                    <p>
+                        Add product, quantity, location and
+                        your preferred price.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    03
+                </div>
+
+                <div>
+
+                    <h3>
+                        Buyer Orders
+                    </h3>
+
+                    <p>
+                        Buyers contact farmers directly and
+                        arrange the purchase.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta" id="contact">
+
+    <div class="container cta-box">
+
+        <div>
+
+            <span class="eyebrow">
+                JOIN THE MARKETPLACE
+            </span>
+
+            <h2>
+                Ready to sell your harvest directly?
+            </h2>
+
+            <p>
+                Put your products in front of buyers and
+                get better market information.
+            </p>
+
+        </div>
+
+        <button
+            class="btn btn-white"
+            id="ctaBtn">
+
+            Register as Farmer
+
+        </button>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="container footer">
+
+        <div>
+
+            <a href="#" class="logo">
+                <span>KB</span>
+                Krishi-Bazaar
+            </a>
+
+            <p>
+                Connecting Nepal's farmers and buyers directly.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h4>
+                Marketplace
+            </h4>
+
+            <a href="#products">
+                Products
+            </a>
+
+            <a href="#prices">
+                Market Prices
+            </a>
+
+            <a href="#how">
+                How It Works
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <h4>
+                Contact
+            </h4>
+
+            <p>
+                Kathmandu, Nepal
+            </p>
+
+            <p>
+                info@krishibazaar.local
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        © 2026 Krishi-Bazaar Direct.
+        Student project prototype.
+
+    </div>
+
+</footer>
+
+
+
+<!-- ================= FARMER MODAL ================= -->
+
+<div class="modal" id="sellModal">
+
+    <div class="modal-content">
+
+        <button
+            class="close"
+            id="closeModal">
+            ×
+        </button>
+
+        <span class="eyebrow">
+            SELL WITH US
+        </span>
+
+        <h2>
+            Farmer Registration
+        </h2>
+
+        <p>
+            Enter your basic information to create a seller profile.
+        </p>
+
+
+        <form id="farmerForm">
+
+            <input
+                type="text"
+                id="farmerName"
+                placeholder="Full name"
+                required
+            >
+
+            <input
+                type="text"
+                id="farmerLocation"
+                placeholder="Farm location"
+                required
+            >
+
+            <input
+                type="text"
+                id="farmerProduct"
+                placeholder="Main product"
+                required
+            >
+
+            <button
+                class="btn btn-primary"
+                type="submit">
+
+                Register Farmer
+
+            </button>
+
+        </form>
+
+
+        <p
+            id="formMessage"
+            class="form-message">
+        </p>
+
+    </div>
+
+</div>
+
+
+
+<!-- JavaScript -->
+
+<script src="chart.js"></script>
+
+</body>
+</html>
