@@ -686,6 +686,131 @@ h2 {
 .rice-bg {
     background: #f5f1e8;
 }
+/* Additional vegetable backgrounds */
+
+.cabbage-bg {
+    background: #eefbf4;
+}
+
+.carrot-bg {
+    background: #fff3e8;
+}
+
+.radish-bg {
+    background: #f8f1ff;
+}
+
+.spinach-bg {
+    background: #edf8f1;
+}
+
+.brinjal-bg {
+    background: #f5efff;
+}
+
+.cucumber-bg {
+    background: #eefbf2;
+}
+
+.pumpkin-bg {
+    background: #fff4df;
+}
+
+.beans-bg {
+    background: #eef8ed;
+}
+
+.bitter-bg {
+    background: #f0f9ef;
+}
+
+
+/* Additional fruit backgrounds */
+
+.banana-bg {
+    background: #fff9dc;
+}
+
+.orange-bg {
+    background: #fff0df;
+}
+
+.mango-bg {
+    background: #fff4cf;
+}
+
+.papaya-bg {
+    background: #fff0e4;
+}
+
+.watermelon-bg {
+    background: #fff0f1;
+}
+
+.grapes-bg {
+    background: #f4edff;
+}
+
+.pomegranate-bg {
+    background: #fff0f0;
+}
+
+.guava-bg {
+    background: #eff9e9;
+}
+
+.litchi-bg {
+    background: #fff0f2;
+}
+
+.kiwi-bg {
+    background: #f1f8df;
+}
+
+.pineapple-bg {
+    background: #fff8d9;
+}
+/* Grain product backgrounds */
+
+.rice-bg {
+    background: #fff8dc;
+}
+
+.wheat-bg {
+    background: #fff1d6;
+}
+
+.maize-bg {
+    background: #fff6c7;
+}
+
+.millet-bg {
+    background: #f4ead5;
+}
+
+.buckwheat-bg {
+    background: #f3e9df;
+}
+
+.barley-bg {
+    background: #f7edd0;
+}
+
+.lentils-bg {
+    background: #f8e7d8;
+}
+
+.blackgram-bg {
+    background: #eee9e4;
+}
+
+.soybean-bg {
+    background: #f1ead5;
+}
+
+.chickpeas-bg {
+    background: #fff2cf;
+}
 
 
 .product-info {
