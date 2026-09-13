@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profile Card</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- QR Code Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Profile Card -->
+    <div class="profile-card" id="profileCard">
+
+        <img src="viber_image_2024-11-07_09-11-45-084.jpg" alt="Profile Image" class="profile-image">
+
+        <h2>Ram Krishna Sah</h2>
+
+        <p><strong>Address:</strong> Kathmandu, Nepal</p>
+
+        <p><strong>Email:</strong> ram@example.com</p>
+
+        <p><strong>Phone:</strong> 98XXXXXXXX</p>
+
+        <p><strong>Occupation:</strong> IT Student</p>
+
+        <p><strong>Skills:</strong> HTML, CSS, JavaScript</p>
+
+        <button id="qrButton">Show QR Code</button>
+
+    </div>
+
+
+    <!-- QR Code Popup -->
+    <div id="qrPopup">
+
+        <div class="qr-box">
+
+            <h2>Profile QR Code</h2>
+
+            <div id="qrcode"></div>
+
+            <button id="closeQR">Close</button>
+
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+    <!-- jQuery -->
+    <script src="jquery.js"></script>
+
+</body>
+</html>
