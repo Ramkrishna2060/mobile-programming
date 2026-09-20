@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 30px;
+}
+
+#profile-card {
+    width: 500px;
+    margin: auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+button {
+    margin: 5px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#nickname-input {
+    padding: 8px;
+    margin: 10px;
+    width: 200px;
+}
+
+#output {
+    margin-top: 15px;
+    padding: 15px;
+    min-height: 25px;
+    background-color: #eeeeee;
+    border-radius: 5px;
+}
+
+/* Highlight class */
+.highlighted {
+    border: 5px solid orange;
+}
+
+/* Dark mode class */
+.dark-mode {
+    background-color: #222 !important;
+    color: white;
+}
+
+/* Rounded photo class */
+.rounded {
+    border-radius: 20px !important;
+}
+
+/* Photo shadow */
+.shadow {
+    box-shadow: 0 0 20px #555555;
+}
+
+#skills-list {
+    text-align: left;
+    display: inline-block;
+}
